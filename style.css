@@ -230,6 +230,106 @@ footer {
 
 .badge { background: var(--secondary); color: white; padding: 3px 8px; border-radius: 4px; font-size: 12px; margin-right: 5px; }
 
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    header {
+        padding: 30px 20px;
+    }
+    h1 {
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+    .tagline {
+        font-size: 14px;
+    }
+    .content {
+        padding: 25px 15px;
+    }
+    h2 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    h2::before {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .intro-card {
+        padding: 20px;
+    }
+    .market-info {
+        padding: 20px;
+    }
+    .market-prices {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .market-value {
+        font-size: 20px;
+    }
+    .process-step {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .step-number {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .comparison-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .comparison-table th, .comparison-table td {
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+    .our-plan::after {
+        font-size: 10px;
+        padding: 2px 6px;
+        top: -8px;
+        right: 5px;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .feature-box {
+        padding: 20px;
+    }
+    .feature-box h3 {
+        font-size: 17px;
+    }
+    .cost-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .cost-card {
+        padding: 20px;
+    }
+    .risk-notice {
+        padding: 20px;
+    }
+    .risk-title {
+        font-size: 18px;
+    }
+    .collaboration {
+        padding: 25px 20px;
+    }
+    footer {
+        padding: 20px;
+        font-size: 12px;
+    }
+}
+
 @media print {
     body { background: white; }
     .wrapper { box-shadow: none; margin: 0; max-width: 100%; border-radius: 0; }
